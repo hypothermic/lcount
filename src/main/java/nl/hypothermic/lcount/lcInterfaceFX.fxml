@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="200.0" prefHeight="420.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hypothermic.lcount.lcInterfaceController">
+   <children>
+      <MenuButton fx:id="langbtn" layoutX="479.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Language" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="6.0">
+        <items>
+          <MenuItem onAction="#setEN" mnemonicParsing="false" text="English" />
+          <MenuItem onAction="#setNL" mnemonicParsing="false" text="Nederlands" />
+        </items>
+      </MenuButton>
+      <TextArea fx:id="sourcearea" onKeyReleased="#refresh" layoutX="14.0" layoutY="14.0" prefHeight="408.0" prefWidth="469.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="6.0" />
+      <Button fx:id="exitbtn" layoutX="592.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="92.0" text="Exit" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0" />
+      <Button fx:id="calcbtn" layoutX="479.0" layoutY="381.0" mnemonicParsing="false" onAction="#calc" prefHeight="25.0" prefWidth="150.0" text="Calculate" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="61.0" />
+      <TextField fx:id="outchars" editable="false" layoutX="479.0" layoutY="356.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="6.0" />
+      <TextField fx:id="outwords" editable="false" layoutX="479.0" layoutY="324.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.bottomAnchor="71.0" AnchorPane.rightAnchor="6.0" />
+      <TextField fx:id="outnums" editable="false" layoutX="479.0" layoutY="292.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.bottomAnchor="103.0" AnchorPane.rightAnchor="6.0" />
+      <TextField fx:id="outletters" editable="false" layoutX="479.0" layoutY="259.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.bottomAnchor="135.0" AnchorPane.rightAnchor="6.0" />
+      <ProgressBar fx:id="ldbar" layoutX="479.0" layoutY="37.0" maxHeight="15.0" maxWidth="206.0" minHeight="15.0" minWidth="206.0" prefHeight="15.0" prefWidth="206.0" progress="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="37.0" />
+      <ToggleButton fx:id="autobtn" onAction="#autoswitch" layoutX="626.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="AUTO" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="6.0" />
+   </children>
+</AnchorPane>
