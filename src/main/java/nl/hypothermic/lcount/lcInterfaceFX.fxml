@@ -21,5 +21,8 @@
       <TextField fx:id="outletters" editable="false" layoutX="479.0" layoutY="259.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.bottomAnchor="135.0" AnchorPane.rightAnchor="6.0" />
       <ProgressBar fx:id="ldbar" layoutX="479.0" layoutY="37.0" maxHeight="15.0" maxWidth="206.0" minHeight="15.0" minWidth="206.0" prefHeight="15.0" prefWidth="206.0" progress="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="37.0" />
       <ToggleButton fx:id="autobtn" onAction="#autoswitch" layoutX="626.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="AUTO" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="6.0" />
+        <TextField fx:id="incustom" onKeyReleased="#setRegex" layoutX="479.0" layoutY="228.0" prefHeight="25.0" prefWidth="143.0" promptText="Custom" AnchorPane.bottomAnchor="167.0" AnchorPane.rightAnchor="68.0" />
+        <TextField fx:id="outcustom" editable="false" layoutX="625.0" layoutY="228.0" prefHeight="25.0" prefWidth="59.0" AnchorPane.bottomAnchor="167.0" AnchorPane.rightAnchor="6.0" />
+   	  <CheckBox fx:id="cbcasesens" layoutX="479.0" layoutY="201.0" mnemonicParsing="false" onAction="#chcasesens" prefHeight="18.0" prefWidth="205.0" selected="true" text="Case Sensitive" AnchorPane.bottomAnchor="201.0" AnchorPane.rightAnchor="6.0" />
    </children>
 </AnchorPane>
