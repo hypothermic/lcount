@@ -43,11 +43,11 @@ public class lcCountService extends Service<HashMap<String, Integer>> {
         		// als "case sensitive" checkbox aangevinkt is
             	if (!casesens) {
             		// tel aangepaste regex
-            		try { x.put("cstm", ((content.length() - content.replace(customregex, "").length()) /* / customregex.length()*/)); } catch (Exception e) { /* customregex is leeg */ }
+            		try { x.put("cstm", ((content.length() - content.replace(customregex, "").length()) / customregex.length())); } catch (Exception e) { /* customregex is leeg */ }
             	} else {
             		System.out.println("Debug");
             		// hetzelfde als hierboven maar dan case insensitive
-            		try { x.put("cstm", ((content.length() - content.toLowerCase().replace(customregex.toLowerCase(), "").length()) /* / customregex.length()*/)); } catch (Exception e) { /* customregex is leeg */ }
+            		try { x.put("cstm", ((content.length() - content.toLowerCase().replace(customregex.toLowerCase(), "").length()) / customregex.length())); } catch (Exception e) { /* customregex is leeg */ }
             	}
             	// service geeft hashmap terug aan vragende functie (calc())
             	return x;
